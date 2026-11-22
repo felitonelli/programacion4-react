@@ -1,0 +1,88 @@
+:root {
+  font-family: system-ui, "Segoe UI", Roboto, sans-serif;
+  line-height: 1.5;
+  color-scheme: light dark;
+  --borde: #d0d7de;
+  --acento: #0e7490;
+  --acento-bg: rgba(14, 116, 144, 0.12);
+  --suave: #6b7280;
+}
+
+body {
+  margin: 0;
+}
+
+#root {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 24px;
+}
+
+nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 24px;
+}
+
+nav button.activo {
+  background: var(--acento);
+  color: white;
+}
+
+button,
+input {
+  font: inherit;
+  padding: 6px 12px;
+  border: 1px solid var(--borde);
+  border-radius: 6px;
+}
+
+button {
+  cursor: pointer;
+  background: var(--acento-bg);
+  color: var(--acento);
+  font-weight: 600;
+}
+
+button:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
+.fila {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  align-items: flex-start;
+}
+
+.tarjeta {
+  border: 1px solid var(--borde);
+  border-radius: 8px;
+  padding: 16px;
+  min-width: 140px;
+}
+
+.tarjeta h3 {
+  margin: 0 0 8px;
+}
+
+.tarjeta p {
+  margin: 4px 0;
+}
+
+.suave {
+  color: var(--suave);
+}
+
+.oferta {
+  color: #c2410c;
+  font-weight: 700;
+}
+
+.grande {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin: 8px 0;
+}
